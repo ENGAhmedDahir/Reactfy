@@ -39,23 +39,6 @@ body {
 	font-weight: 800;
 	color: #1877c9;
 }
-.cart {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	background-color: rgb(24, 119, 201);
-	color: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	font-size: 24px;
-	font-weight: bold;
-	padding: 15px;
-}
-a{
-    text-decoration: none;
-}
 
 .grid {
 	display: grid;
@@ -95,6 +78,14 @@ a{
 	font-size: 1.75rem;
 }
 
+/* .info {
+	
+} */
+
+.price {
+	font-size: 18px;
+	font-style: italic;
+}
 .btn {
 	position: absolute;
 	width: 50px;
@@ -110,10 +101,28 @@ a{
 	right: 10px;
 }
 
-.btn-secondary{
+.cart {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgb(24, 119, 201);
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.btn-secondary {
 	background-color: #d63535;
 }
 
+a {
+	text-decoration: none;
+}
 .cart-container {
 	background-color: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -205,6 +214,7 @@ a{
 	resize: vertical;
 	font-size: 20px;
 }
+
 .btn-proceed {
 	width: 94%;
 	margin: 10px 12px;
@@ -216,6 +226,7 @@ a{
 	font-size: 20px;
 	cursor: pointer;
 }
+
 .btn-proceed:hover {
 	background-color: rgb(26, 102, 169);
 }
@@ -223,4 +234,24 @@ a{
 .btn-proceed:disabled {
 	background-color: rgb(64, 132, 187);
 	cursor: not-allowed;
+}
+
+.loading {
+	font-size: 20px;
+	animation: spin 2s linear infinite;
+}
+
+footer {
+	padding: 30px;
+	text-align: center;
+	font-size: 25px;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
